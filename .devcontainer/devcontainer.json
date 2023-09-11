@@ -8,6 +8,13 @@
 		"ghcr.io/devcontainers/features/aws-cli:1": {},
 		"ghcr.io/devcontainers-contrib/features/ansible:2": {},
 		"ghcr.io/devcontainers-contrib/features/packer-asdf:2": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"hashicorp.hcl"
+			]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
