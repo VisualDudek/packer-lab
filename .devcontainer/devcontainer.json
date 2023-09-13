@@ -8,13 +8,23 @@
 		"ghcr.io/devcontainers/features/aws-cli:1": {},
 		"ghcr.io/devcontainers-contrib/features/ansible:2": {},
 		"ghcr.io/devcontainers-contrib/features/packer-asdf:2": {},
-		"ghcr.io/mikaello/devcontainer-features/modern-shell-utils:1": {}
+		"ghcr.io/mikaello/devcontainer-features/modern-shell-utils:1": {},
+		"ghcr.io/devcontainers/features/common-utils:2":{
+            "installZsh": "true",
+            "username": "vscode",
+            "userUid": "1000",
+            "userGid": "1000",
+            "upgradePackages": "true"
+        }
 	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"hashicorp.hcl"
-			]
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh"
+			}
 		}
 	},
 
